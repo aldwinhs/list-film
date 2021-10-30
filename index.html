@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" sizes="32x32" href="https://m.media-amazon.com/images/G/01/imdb/images-ANDW73HA/favicon_desktop_32x32._CB1582158068_.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="https://m.media-amazon.com/images/G/01/imdb/images-ANDW73HA/favicon_desktop_32x32._CB1582158068_.png"
+    />
     <title>Movie List</title>
-</head>
-<body>
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <nav class="navbar">
+      <div class="navbar_container">
+        <a href="#home" id="navbar_logo">Movie</a>
+        <ul class="navbar_menu">
+          <li class="navbar_item">
+            <a href="#home" class="navbar_links" id="home-page">Home</a>
+          </li>
+          <li class="navbar_item">
+            <a href="#genre" class="navbar_links" id="genre-page">Genre</a>
+          </li>
+          <li class="navbar_item">
+            <a href="#about" class="navbar_links" id="about-page">About</a>
+          </li>
+        </ul>
+        <form id="form">
+          <input type="text" placeholder="Movie Name" id="search" class="search" />
+        </form>
+      </div>
+    </nav>
+
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
     
-</body>
+      <!-- Overlay content -->
+      <div class="overlay-content" id="overlay-content"></div>
+
+    </div>
+
+
+    <main id="main">
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
